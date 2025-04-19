@@ -1,0 +1,14 @@
+{
+  "name": "tema1_node",
+  "version": "1.0.0",
+  "description": "practicar conexion y manipulacion de BBDD desde node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.14.0"
+  }
+}

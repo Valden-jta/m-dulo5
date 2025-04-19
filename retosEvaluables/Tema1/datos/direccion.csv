@@ -1,0 +1,41 @@
+direccion_id,calle,numero,ciudad,codigo_postal,pais
+1,Avenida Gran Vía,1,Madrid,28013,España
+2,Calle Alcalá,45,Madrid,28014,España
+3,Calle Serrano,23,Madrid,28001,España
+4,Paseo de Gracia,12,Barcelona,08007,España
+5,La Rambla,5,Barcelona,08002,España
+6,Calle Balmes,34,Barcelona,08006,España
+7,Avenida Diagonal,78,Barcelona,08019,España
+8,Calle Larios,10,Málaga,29005,España
+9,Paseo del Parque,3,Málaga,29016,España
+10,Calle Marqués de Larios,15,Málaga,29015,España
+11,Calle Colón,22,Valencia,46004,España
+12,Avenida del Puerto,8,Valencia,46023,España
+13,Calle Caballeros,19,Valencia,46001,España
+14,Calle Sierpes,7,Sevilla,41004,España
+15,Avenida de la Constitución,11,Sevilla,41001,España
+16,Calle Betis,9,Sevilla,41010,España
+17,Calle Mayor,4,Zaragoza,50001,España
+18,Paseo de la Independencia,6,Zaragoza,50004,España
+19,Calle Alfonso I,13,Zaragoza,50003,España
+20,Calle Uría,2,Oviedo,33003,España
+21,Calle Gascona,14,Oviedo,33001,España
+22,Calle Corrida,18,Gijón,33206,España
+23,Calle San Bernardo,20,Salamanca,37002,España
+24,Calle Toro,25,Salamanca,37001,España
+25,Calle Laurel,30,Logroño,26001,España
+26,Avenida Gran Vía,16,Bilbao,48001,España
+27,Calle Ercilla,21,Bilbao,48009,España
+28,Travesía Estafeta,27,Pamplona,31001,España
+29,Calle Mayor,33,Pamplona,31001,España
+30,Calle Real,40,A Coruña,15003,España
+31,Calle del Príncipe,50,Vigo,36202,España
+32,Calle Urzáiz,60,Vigo,36201,España
+33,Calle del Castillo,70,Santa Cruz de Tenerife,38003,España
+34,Calle Triana,80,Las Palmas,35002,España
+35,Calle Mayor,90,Santander,39001,España
+36,Calle del Carmen,100,Santander,39002,España
+37,Calle Ancha,110,Cádiz,11001,España
+38,Calle Larga,120,Jerez de la Frontera,11403,España
+39,Calle Nueva,130,Granada,18009,España
+40,Paseo del Prado,140,Madrid,28014,España
