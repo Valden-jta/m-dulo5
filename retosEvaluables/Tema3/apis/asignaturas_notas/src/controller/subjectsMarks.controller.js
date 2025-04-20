@@ -1,27 +1,155 @@
 // *---------------------- template ---------------------- *\\
-//?_________  Imports _________\\ 
+//?_________  Imports _________\\
+const { pool } = require("../database.js");
 
-//?_________ Datos _________\\ 
+//?_________ Datos _________\\
+let subjectMarks = null;
 
-//?_________ Funciones _________\\ 
+//?_________ Funciones _________\\
+function getStart(req, res) {
+  let answer = { error: true, code: 200, message: "Punto de inicio API Asignaturas y Notas" };
+  res.send(answer);
+}
 // Nota media del alumno pasado por parametro: GET /media?id=5 o /media:5
-function getStudentAvg(req,res) {}
+const getStudentAvg = async(req, res) => {
+     try {
+        let sql = "";
+        let param = [];
+
+        // añadir funcionalidad
+
+        let [result] = await pool.query(sql,param);
+        res.send({
+            error:false,
+            code: 200,
+            message: "consulta" + sql + "realizada correctamente",
+            data: result
+        })
+    }
+    catch(err) {
+        console.error("Error en getStudentAvg: ", err.message);
+        res.send({
+            error: true,
+            code:500,
+            message: "Algo ha fallado en el servidor."
+        });
+    }
+}
 
 // Lista asignaturas del alumno pasado por parametro: GET /apuntadas?id=5 o /apuntadas:5
-function getStudentSubjects(req,res) {}
+const getStudentSubjects = async(req, res) => {
+     try {
+        let sql = "";
+        let param = [];
+
+        // añadir funcionalidad
+
+        let [result] = await pool.query(sql,param);
+        res.send({
+            error:false,
+            code: 200,
+            message: "consulta" + sql + "realizada correctamente",
+            data: result
+        })
+    }
+    catch(err) {
+        console.error("Error en getStudentSubjects: ", err.message);
+        res.send({
+            error: true,
+            code:500,
+            message: "Algo ha fallado en el servidor."
+        });
+    }
+}
 
 // Lista asignaturas de cada alumno GET /apuntadas
-function  getAllStudentSubjects(req, res) {}
+const getAllStudentSubjects = async(req, res) => {
+     try {
+        let sql = "";
+        let param = [];
+
+        // añadir funcionalidad
+
+        let [result] = await pool.query(sql,param);
+        res.send({
+            error:false,
+            code: 200,
+            message: "consulta" + sql + "realizada correctamente",
+            data: result
+        })
+    }
+    catch(err) {
+        console.error("Error en getAllStudentSubjects: ", err.message);
+        res.send({
+            error: true,
+            code:500,
+            message: "Algo ha fallado en el servidor."
+        });
+    }
+}
 
 // Lista asignaturas impartidas por  el profesor pasado por parametro: GET /impartidas?id=5 o /impartidas:5
-function getTeacherSubjects(req,res) {}
+const getTeacherSubjects = async(req, res) => {
+     try {
+        let sql = "";
+        let param = [];
+
+        // añadir funcionalidad
+
+        let [result] = await pool.query(sql,param);
+        res.send({
+            error:false,
+            code: 200,
+            message: "consulta" + sql + "realizada correctamente",
+            data: result
+        })
+    }
+    catch(err) {
+        console.error("Error en getTeacherSubjects: ", err.message);
+        res.send({
+            error: true,
+            code:500,
+            message: "Algo ha fallado en el servidor."
+        });
+    }
+}
 
 // Lista de profesores y asignaturas que imparte: GET /impartidas
-function getAllTeacherSubjects(req,res) {}
+const getAllTeacherSubjects = async(req, res) => {
+     try {
+        let sql = "";
+        let param = [];
 
+        // añadir funcionalidad
 
-//?_________ Exports _________\\ 
-module.exports = { getStudentAvg, getStudentSubjects, getAllStudentSubjects, getTeacherSubjects, getAllTeacherSubjects } 
+        let [result] = await pool.query(sql,param);
+        res.send({
+            error:false,
+            code: 200,
+            message: "consulta" + sql + "realizada correctamente",
+            data: result
+        })
+    }
+    catch(err) {
+        console.error("Error en getAllTeacherSubjects: ", err.message);
+        res.send({
+            error: true,
+            code:500,
+            message: "Algo ha fallado en el servidor."
+        });
+    }
+}
+
+//?_________ Exports _________\\
+module.exports = {
+  subjectMarks,
+  getStart,
+  getStudentAvg,
+  getStudentSubjects,
+  getAllStudentSubjects,
+  getTeacherSubjects,
+  getAllTeacherSubjects,
+};
 
 /* Ejemplo
 // localhost:3000/usuario?parametro=valor

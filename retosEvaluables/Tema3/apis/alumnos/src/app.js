@@ -5,7 +5,7 @@
 const express = require("express");
 const cors = require("cors");
 
-const studentsRouters = require("./routers/student.routers");
+const studentsRouters = require("./routers/students.routers");
 
 // Errores
 const errorHandling = require("./error/errorHandling");
