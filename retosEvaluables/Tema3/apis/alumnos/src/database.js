@@ -4,10 +4,10 @@ const mysql = require("mysql2");
 const pool = mysql
   .createPool({
     // Parámetros de conexion
-    host: "localhost",
-    user: "root",
-    password: "SQLappServer:00-87",
-    database: "tema3",
+    host: "",
+    user: "",
+    password: "",
+    database: "",
     // Parámetros de configuración de las opciones de conexion
     waitForConnections: true,
     connectionLimit: 10,
