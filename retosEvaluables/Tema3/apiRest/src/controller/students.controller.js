@@ -187,7 +187,7 @@ const putStudent = async (req, res) => {
         code: 404,
         message: "No se encontro ningún alumno con ese id",
       });
-      console.log("No se pudo añadir al alumno: ", result);
+      console.log("No se pudo modificar al alumno: ", result);
     }
   } catch (err) {
     console.error("Error en putStudent: ", err.message);
@@ -232,7 +232,7 @@ const deleteStudent = async (req, res) => {
         code: 404,
         message: "No se encontro ningún alumno con ese id",
       });
-      console.log("No se pudo añadir al alumno: ", result);
+      console.log("No se pudo eliminar al alumno: ", result);
     }
   } catch (err) {
     console.error("Error en deleteStudent: ", err.message);
